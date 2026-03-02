@@ -21,7 +21,7 @@ public class Main {
       System.out.println(Integer.MAX_VALUE);
       String straightNums = "13.0"; 
       double parsedD = Double.parseDouble(straightNums);
-      System.out.println(parseD);
+      System.out.println(parsedD);
       String stringyNums2 = "13";
       int parsedI = Integer.parseInt(stringyNums2);
       System.out.println(parsedI);
@@ -81,6 +81,28 @@ public class Main {
       String removedItem = toDo.remove(2);
       System.out.println(toDo);
       System.out.println("We removed the item:" + removedItem);
+
+      //4.9 ARRAYLIST TRAVERSAL 
+      ArrayList<Integer> scores = new ArrayList<Integer>(); 
+      scores.add(86);
+      scores.add(83);
+      scores.add(92);
+      System.out.println(scores);
+
+      //ENHANCED FOR-EACH LOOP
+      //to "visit" every item in order
+      //does not keep track of current index/position 
+      for(Integer currentScore: scores ){
+         System.out.println("Test Score: " + currentScore);
+      } 
+
+      //typical example: count up all items 
+      double sum = 0;
+      for(Integer score : scores){
+         sum = sum + score; // OR sum+=score
+      }
+      double avg = sum / scores.size();
+      System.println("Test Averge: " + avg);
 
    }//END MAIN METHOD 
 } // END CLASS
