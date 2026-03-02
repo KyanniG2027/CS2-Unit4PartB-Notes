@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
    public static void main(String []args) {
@@ -102,7 +104,7 @@ public class Main {
          sum = sum + score; // OR sum+=score
       }
       double avg = sum / scores.size();
-      System.println("Test Averge: " + avg);
+      System.out.println("Test Averge: " + avg);
 
    }//END MAIN METHOD 
 } // END CLASS
